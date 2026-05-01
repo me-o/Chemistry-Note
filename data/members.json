@@ -135,6 +135,17 @@
           "link": "https://github.com/ks-kbl"
         }
       ]
+    },
+    {
+      "avatar": "https://github.com/me-o.png",
+      "name": "me-o",
+      "title": "Collaborator",
+      "links": [
+        {
+          "icon": "github",
+          "link": "https://github.com/me-o"
+        }
+      ]
     }
   ]
 }
