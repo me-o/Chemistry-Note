@@ -6,5 +6,5 @@
   "trailingComma": "all",
   "proseWrap": "preserve",
   "sortPackageJson": false,
-  "ignorePatterns": ["**/*.md"]
+  "ignorePatterns": []
 }
