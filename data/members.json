@@ -1,140 +1,140 @@
 {
-    "members": [
+  "members": [
+    {
+      "avatar": "https://www.github.com/Seeridia.png",
+      "name": "Seeridia",
+      "title": "Creator",
+      "links": [
         {
-            "avatar": "https://www.github.com/Seeridia.png",
-            "name": "Seeridia",
-            "title": "Creator",
-            "links": [
-                {
-                    "icon": "github",
-                    "link": "https://github.com/Seeridia"
-                },
-                {
-                    "icon": "qq",
-                    "link": "https://qm.qq.com/q/RhaAYLyT2a"
-                }
-            ]
+          "icon": "github",
+          "link": "https://github.com/Seeridia"
         },
         {
-            "avatar": "https://www.github.com/cn-ryh.png",
-            "name": "cn-ryh",
-            "title": "Collaborator",
-            "links": [
-                {
-                    "icon": "github",
-                    "link": "https://github.com/cn-ryh"
-                }
-            ]
-        },
-        {
-            "avatar": "https://www.github.com/Twinsherry.png",
-            "name": "Twinsherry",
-            "title": "Collaborator",
-            "links": [
-                {
-                    "icon": "github",
-                    "link": "https://github.com/Twinsherry"
-                }
-            ]
-        },
-        {
-            "avatar": "https://www.github.com/xiaozhi-boy.png",
-            "name": "xiaozhi-boy",
-            "title": "Collaborator",
-            "links": [
-                {
-                    "icon": "github",
-                    "link": "https://github.com/xiaozhi-boy"
-                }
-            ]
-        },
-        {
-            "avatar": "https://www.github.com/zhenmunse.png",
-            "name": "zhenmunse",
-            "title": "Collaborator",
-            "links": [
-                {
-                    "icon": "github",
-                    "link": "https://github.com/zhenmunse"
-                }
-            ]
-        },
-        {
-            "avatar": "https://www.github.com/MeowCata.png",
-            "name": "DingDang",
-            "title": "Collaborator",
-            "links": [
-                {
-                    "icon": "github",
-                    "link": "https://github.com/MeowCata"
-                }
-            ]
-        },
-        {
-            "avatar": "https://github.com/malphax404-dotcom.png",
-            "name": "MalphaX",
-            "title": "Collaborator",
-            "links": [
-                {
-                    "icon": "github",
-                    "link": "https://github.com/malphax404-dotcom"
-                }
-            ]
-        },
-        {
-            "avatar": "https://cdn.luogu.com.cn/upload/image_hosting/ahyk4cxy.png",
-            "name": "Wzmois",
-            "title": "Collaborator",
-            "links": [
-                {
-                    "icon": "github",
-                    "link": "https://github.com/Wzmois"
-                }
-            ]
-        },
-        {            
-            "avatar": "https://www.github.com/zspro.png",            
-            "name": "知识pro",
-            "title": "Collaborator",            
-            "links": [
-                {
-                    "icon": "github",
-                    "link": "https://github.com/zspro"
-                }
-            ]        
-        },
-        {
-            "avatar": "https://www.github.com/OuyangLeon.png",
-            "name": "欧阳狮子",
-            "title": "Collaborator",
-            "links": [
-                {
-                    "icon": "github",
-                    "link": "https://github.com/OuyangLeon"
-                }
-            ]
-        },
-        {
-            "avatar": "https://www.github.com/charlieymx.png",
-            "name": "LIABOC_CEG",
-            "title": "Collaborator",
-            "links": [
-                {
-                    "icon": "github",
-                    "link": "https://github.com/charlieymx"
-                }
-            ]
-        },
-        {
-            "avatar": "https://github.com/ks-kbl.png",
-            "name": "ks-kbl",
-            "title": "Collaborator",
-            "links": [
-                {
-                    "icon": "github",
-                    "link": "https://github.com/ks-kbl"
-                }
-            ]
+          "icon": "qq",
+          "link": "https://qm.qq.com/q/RhaAYLyT2a"
         }
-    ]
+      ]
+    },
+    {
+      "avatar": "https://www.github.com/cn-ryh.png",
+      "name": "cn-ryh",
+      "title": "Collaborator",
+      "links": [
+        {
+          "icon": "github",
+          "link": "https://github.com/cn-ryh"
+        }
+      ]
+    },
+    {
+      "avatar": "https://www.github.com/Twinsherry.png",
+      "name": "Twinsherry",
+      "title": "Collaborator",
+      "links": [
+        {
+          "icon": "github",
+          "link": "https://github.com/Twinsherry"
+        }
+      ]
+    },
+    {
+      "avatar": "https://www.github.com/xiaozhi-boy.png",
+      "name": "xiaozhi-boy",
+      "title": "Collaborator",
+      "links": [
+        {
+          "icon": "github",
+          "link": "https://github.com/xiaozhi-boy"
+        }
+      ]
+    },
+    {
+      "avatar": "https://www.github.com/zhenmunse.png",
+      "name": "zhenmunse",
+      "title": "Collaborator",
+      "links": [
+        {
+          "icon": "github",
+          "link": "https://github.com/zhenmunse"
+        }
+      ]
+    },
+    {
+      "avatar": "https://www.github.com/MeowCata.png",
+      "name": "DingDang",
+      "title": "Collaborator",
+      "links": [
+        {
+          "icon": "github",
+          "link": "https://github.com/MeowCata"
+        }
+      ]
+    },
+    {
+      "avatar": "https://github.com/malphax404-dotcom.png",
+      "name": "MalphaX",
+      "title": "Collaborator",
+      "links": [
+        {
+          "icon": "github",
+          "link": "https://github.com/malphax404-dotcom"
+        }
+      ]
+    },
+    {
+      "avatar": "https://cdn.luogu.com.cn/upload/image_hosting/ahyk4cxy.png",
+      "name": "Wzmois",
+      "title": "Collaborator",
+      "links": [
+        {
+          "icon": "github",
+          "link": "https://github.com/Wzmois"
+        }
+      ]
+    },
+    {
+      "avatar": "https://www.github.com/zspro.png",
+      "name": "知识pro",
+      "title": "Collaborator",
+      "links": [
+        {
+          "icon": "github",
+          "link": "https://github.com/zspro"
+        }
+      ]
+    },
+    {
+      "avatar": "https://www.github.com/OuyangLeon.png",
+      "name": "欧阳狮子",
+      "title": "Collaborator",
+      "links": [
+        {
+          "icon": "github",
+          "link": "https://github.com/OuyangLeon"
+        }
+      ]
+    },
+    {
+      "avatar": "https://www.github.com/charlieymx.png",
+      "name": "LIABOC_CEG",
+      "title": "Collaborator",
+      "links": [
+        {
+          "icon": "github",
+          "link": "https://github.com/charlieymx"
+        }
+      ]
+    },
+    {
+      "avatar": "https://github.com/ks-kbl.png",
+      "name": "ks-kbl",
+      "title": "Collaborator",
+      "links": [
+        {
+          "icon": "github",
+          "link": "https://github.com/ks-kbl"
+        }
+      ]
+    }
+  ]
 }
