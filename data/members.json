@@ -1,7 +1,7 @@
 {
   "members": [
     {
-      "avatar": "https://www.github.com/Seeridia.png",
+      "avatar": "/images/members/01-seeridia.jpg",
       "name": "Seeridia",
       "title": "Creator",
       "links": [
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "avatar": "https://www.github.com/cn-ryh.png",
+      "avatar": "/images/members/02-cn-ryh.png",
       "name": "cn-ryh",
       "title": "Collaborator",
       "links": [
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "avatar": "https://www.github.com/Twinsherry.png",
+      "avatar": "/images/members/03-twinsherry.jpg",
       "name": "Twinsherry",
       "title": "Collaborator",
       "links": [
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "avatar": "https://www.github.com/xiaozhi-boy.png",
+      "avatar": "/images/members/04-xiaozhi-boy.jpg",
       "name": "xiaozhi-boy",
       "title": "Collaborator",
       "links": [
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "avatar": "https://www.github.com/zhenmunse.png",
+      "avatar": "/images/members/05-zhenmunse.jpg",
       "name": "zhenmunse",
       "title": "Collaborator",
       "links": [
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "avatar": "https://www.github.com/MeowCata.png",
+      "avatar": "/images/members/06-dingdang.jpg",
       "name": "DingDang",
       "title": "Collaborator",
       "links": [
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "avatar": "https://github.com/malphax404-dotcom.png",
+      "avatar": "/images/members/07-malphax.jpg",
       "name": "MalphaX",
       "title": "Collaborator",
       "links": [
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "avatar": "https://cdn.luogu.com.cn/upload/image_hosting/ahyk4cxy.png",
+      "avatar": "/images/members/08-wzmois.png",
       "name": "Wzmois",
       "title": "Collaborator",
       "links": [
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "avatar": "https://www.github.com/zspro.png",
+      "avatar": "/images/members/09-pro.jpg",
       "name": "知识pro",
       "title": "Collaborator",
       "links": [
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "avatar": "https://www.github.com/OuyangLeon.png",
+      "avatar": "/images/members/10-member.png",
       "name": "欧阳狮子",
       "title": "Collaborator",
       "links": [
@@ -115,7 +115,7 @@
       ]
     },
     {
-      "avatar": "https://www.github.com/charlieymx.png",
+      "avatar": "/images/members/11-liaboc-ceg.jpg",
       "name": "LIABOC_CEG",
       "title": "Collaborator",
       "links": [
@@ -126,7 +126,7 @@
       ]
     },
     {
-      "avatar": "https://github.com/ks-kbl.png",
+      "avatar": "/images/members/12-ks-kbl.jpg",
       "name": "ks-kbl",
       "title": "Collaborator",
       "links": [
@@ -137,7 +137,7 @@
       ]
     },
     {
-      "avatar": "https://github.com/me-o.png",
+      "avatar": "/images/members/13-me-o.jpg",
       "name": "me-o",
       "title": "Collaborator",
       "links": [

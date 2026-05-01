@@ -8,6 +8,10 @@
   filter: none !important;
 }
 
+.avatar-img {
+  margin: 0 !important;
+}
+
 /* 页面切换时正文上滑动画 */
 .vp-doc > div,
 .VPHome {
