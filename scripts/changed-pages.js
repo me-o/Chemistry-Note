@@ -6,7 +6,7 @@ import url from "url";
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 const args = process.argv.slice(2);
-const getArgValue = flag => {
+const getArgValue = (flag) => {
   const index = args.indexOf(flag);
   if (index === -1) {
     return null;
@@ -24,7 +24,7 @@ const outDir = outDirInput
 // 全 0 的 SHA 表示“无基准”，需要全量导出
 const zeroSha = /^0+$/;
 // 判断是否属于需要全量导出的“全局变更”
-const isGlobalChange = filePath => {
+const isGlobalChange = (filePath) => {
   if (!filePath) {
     return false;
   }
@@ -41,7 +41,7 @@ const isGlobalChange = filePath => {
 };
 
 // 将 .md 路径映射为站点输出的 .html 路径
-const mdToHtml = filePath => {
+const mdToHtml = (filePath) => {
   if (!filePath) {
     return null;
   }

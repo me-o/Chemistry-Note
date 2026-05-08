@@ -7,7 +7,7 @@ import { useWalineBase } from "./useWalineBase";
 const { serverURL, route } = useWalineBase();
 let abortPageview = null;
 
-const runPageview = path => {
+const runPageview = (path) => {
   if (abortPageview) abortPageview();
   abortPageview = pageviewCount({ serverURL, path });
 };
@@ -18,7 +18,7 @@ onMounted(() => {
 
 watch(
   () => route.path,
-  path => {
+  (path) => {
     if (typeof window === "undefined") return;
     runPageview(path);
   },

@@ -5,7 +5,7 @@ import { encodeLink, getSections } from "./sidebar";
 export const buildNavItems = (rootDir: string): DefaultTheme.NavItem[] => {
   const sections = getSections(rootDir);
 
-  const items: DefaultTheme.NavItemWithLink[] = sections.map(sectionName => {
+  const items: DefaultTheme.NavItemWithLink[] = sections.map((sectionName) => {
     const link = `/${sectionName}/index`;
     return { text: sectionName, link: encodeLink(link) };
   });

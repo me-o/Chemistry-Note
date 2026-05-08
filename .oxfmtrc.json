@@ -7,11 +7,6 @@
   "proseWrap": "preserve",
   "sortPackageJson": false,
   "ignorePatterns": [],
-  "arrowParens": "avoid",
-  "bracketSpacing": true,
-  "bracketSameLine": false,
-  "jsxSingleQuote": false,
-  "requireConfig": false,
   "sortImports": {
     "groups": [
       "type-import",

@@ -101,7 +101,7 @@ export default defineConfig({
   },
 
   // 生成哈希 - 路径对应表
-  buildEnd: siteConfig => {
+  buildEnd: (siteConfig) => {
     mapShortUrl(siteConfig);
   },
 });

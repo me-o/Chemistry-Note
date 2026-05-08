@@ -94,9 +94,9 @@ if (listPath) {
   const raw = fs.readFileSync(listPath, "utf8");
   files = raw
     .split("\n")
-    .map(line => line.trim())
+    .map((line) => line.trim())
     .filter(
-      line =>
+      (line) =>
         line &&
         line !== "404.html" &&
         line !== "s.html" &&
@@ -106,7 +106,7 @@ if (listPath) {
         !line.startsWith("hidePage/"),
     );
   files = Array.from(new Set(files));
-  files = files.filter(file => fs.existsSync(path.join(distDir, file)));
+  files = files.filter((file) => fs.existsSync(path.join(distDir, file)));
 } else {
   files = await fg("**/*.html", {
     cwd: distDir,
@@ -119,7 +119,7 @@ if (files.length === 0) {
   process.exit(0);
 }
 
-const serverPort = await new Promise(resolve => {
+const serverPort = await new Promise((resolve) => {
   server.listen(0, "127.0.0.1", () => resolve(server.address().port));
 });
 
@@ -152,7 +152,7 @@ for (let i = 0; i < concurrency; i += 1) {
 }
 
 let cursor = 0;
-const worker = async page => {
+const worker = async (page) => {
   while (true) {
     const index = cursor;
     if (index >= files.length) break;
@@ -262,6 +262,6 @@ const worker = async page => {
   }
 };
 
-await Promise.all(pagePool.map(page => worker(page)));
+await Promise.all(pagePool.map((page) => worker(page)));
 await browser.close();
-await new Promise(resolve => server.close(resolve));
+await new Promise((resolve) => server.close(resolve));

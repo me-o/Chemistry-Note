@@ -19,30 +19,30 @@ export const getSections = (rootDir: string): string[] =>
   fs
     .readdirSync(rootDir, { withFileTypes: true })
     .filter(
-      dirent =>
+      (dirent) =>
         dirent.isDirectory() &&
         sectionDirPattern.test(dirent.name) &&
         !ignoredRootDirs.has(dirent.name),
     )
-    .map(dirent => dirent.name)
+    .map((dirent) => dirent.name)
     .sort((a, b) => a.localeCompare(b, "zh-CN"));
 
 export const getSectionFiles = (sectionPath: string): string[] =>
   fs
     .readdirSync(sectionPath, { withFileTypes: true })
-    .filter(dirent => dirent.isFile() && dirent.name.endsWith(".md"))
-    .map(dirent => dirent.name)
+    .filter((dirent) => dirent.isFile() && dirent.name.endsWith(".md"))
+    .map((dirent) => dirent.name)
     .sort((a, b) => a.localeCompare(b, "zh-CN"));
 
 // Build sidebar from numbered top-level folders and their markdown files.
 export const buildSidebarItems = (rootDir: string): DefaultTheme.SidebarItem[] => {
   const sections = getSections(rootDir);
 
-  return sections.map(sectionName => {
+  return sections.map((sectionName) => {
     const sectionPath = path.join(rootDir, sectionName);
-    const files = getSectionFiles(sectionPath).filter(name => name.toLowerCase() !== "index.md");
+    const files = getSectionFiles(sectionPath).filter((name) => name.toLowerCase() !== "index.md");
 
-    const items: DefaultTheme.SidebarItem[] = files.map(filename => {
+    const items: DefaultTheme.SidebarItem[] = files.map((filename) => {
       const name = filename.slice(0, -3);
       return {
         text: name,
