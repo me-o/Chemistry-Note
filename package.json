@@ -25,6 +25,7 @@
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check .",
     "lint-staged": "bunx --no-install lint-staged",
+    "typecheck": "bunx --no-install tsc --noEmit",
     "prepare": "husky"
   },
   "lint-staged": {
