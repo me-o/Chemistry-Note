@@ -24,13 +24,9 @@
     "docs:preview": "vitepress preview",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check .",
-    "lint-staged": "bunx --no-install lint-staged",
-    "typecheck": "bunx --no-install tsc --noEmit",
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,json,md}": [
-      "oxfmt --write"
-    ]
+    "*": "oxfmt --no-error-on-unmatched-pattern"
   }
 }

@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { computed } from "vue";
-import { useData, useRoute } from "vitepress";
 import type { DefaultTheme } from "vitepress";
+
+import { useData, useRoute } from "vitepress";
+import { computed } from "vue";
 
 type SidebarItem = DefaultTheme.SidebarItem;
 type ChapterLinkItem = {
@@ -37,7 +38,7 @@ const rootSidebar = computed<SidebarItem[]>(() => {
 const currentChapter = computed<SidebarItem | undefined>(() => {
   const key = currentSectionKey.value;
   if (!key) return undefined;
-  return rootSidebar.value.find((item) => getSectionKey(item.link || "") === key);
+  return rootSidebar.value.find(item => getSectionKey(item.link || "") === key);
 });
 
 const chapterItems = computed<SidebarItem[]>(() => {
@@ -50,13 +51,13 @@ const toChapterLinkItem = (item: SidebarItem): ChapterLinkItem => ({
 });
 
 const chapterLinkItems = computed<ChapterLinkItem[]>(() => {
-  return chapterItems.value.map(toChapterLinkItem).filter((item) => item.text && item.link !== "#");
+  return chapterItems.value.map(toChapterLinkItem).filter(item => item.text && item.link !== "#");
 });
 
 const isTopic = (item: ChapterLinkItem): boolean => item.text.startsWith("考点 ");
 
-const mainItems = computed(() => chapterLinkItems.value.filter((item) => !isTopic(item)));
-const topicItems = computed(() => chapterLinkItems.value.filter((item) => isTopic(item)));
+const mainItems = computed(() => chapterLinkItems.value.filter(item => !isTopic(item)));
+const topicItems = computed(() => chapterLinkItems.value.filter(item => isTopic(item)));
 </script>
 
 <template>

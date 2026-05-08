@@ -1,8 +1,9 @@
-import { defineConfig } from "vitepress";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { buildSidebarItems } from "./siteData/sidebar";
+import { defineConfig } from "vitepress";
+
 import { buildNavItems } from "./siteData/nav";
+import { buildSidebarItems } from "./siteData/sidebar";
 import { buildTransformHead } from "./siteData/transformHead";
 import mapShortUrl from "./theme/components/shortUrl/mapShortUrl";
 
@@ -100,7 +101,7 @@ export default defineConfig({
   },
 
   // 生成哈希 - 路径对应表
-  buildEnd: (siteConfig) => {
+  buildEnd: siteConfig => {
     mapShortUrl(siteConfig);
   },
 });

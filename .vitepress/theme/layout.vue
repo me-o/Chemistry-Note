@@ -1,18 +1,19 @@
 <script setup>
-import DefaultTheme from "vitepress/theme";
 import { useRoute } from "vitepress";
+import DefaultTheme from "vitepress/theme";
 import { nextTick, onMounted, onBeforeUnmount, watch } from "vue";
+
+import CCArticleContributors from "./components/CCArticleContributors.vue";
 import Breadcrumb from "./components/CCBreadCrumb.vue";
+import CCFooter from "./components/CCFooter.vue";
 import PdfDownloadButton from "./components/CCPdfDownloadButton.vue";
 import { CCPageviews, CCWaline } from "./components/waline";
-import CCFooter from "./components/CCFooter.vue";
-import CCArticleContributors from "./components/CCArticleContributors.vue";
 
 const { Layout } = DefaultTheme;
 const route = useRoute();
 
-const normalizePath = (p) => p.replace(/\/$/, "");
-const runOnClientFrame = (cb) => {
+const normalizePath = p => p.replace(/\/$/, "");
+const runOnClientFrame = cb => {
   if (typeof window === "undefined") return;
   window.requestAnimationFrame(cb);
 };
@@ -22,7 +23,7 @@ const expandCurrentSidebarGroup = () => {
   const currentPath = normalizePath(window.location.pathname);
   const groups = document.querySelectorAll(".VPSidebarItem.level-0.collapsible.is-link");
 
-  groups.forEach((group) => {
+  groups.forEach(group => {
     const link = group.querySelector(":scope > .item > a.VPLink");
     const caret = group.querySelector(":scope > .item > .caret");
     if (!(link instanceof HTMLAnchorElement) || !(caret instanceof HTMLElement)) return;
@@ -34,7 +35,7 @@ const expandCurrentSidebarGroup = () => {
   });
 };
 
-const onSectionTitleClick = (event) => {
+const onSectionTitleClick = event => {
   const target = event.target;
   if (!(target instanceof Element)) return;
 

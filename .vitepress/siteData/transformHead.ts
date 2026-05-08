@@ -1,4 +1,3 @@
-import type { HeadConfig, TransformContext } from "vitepress";
 import type {
   Article,
   BreadcrumbList,
@@ -10,6 +9,7 @@ import type {
   WebSite,
   WithContext,
 } from "schema-dts";
+import type { HeadConfig, TransformContext } from "vitepress";
 
 type JsonLd<T extends Thing> = WithContext<T>;
 
@@ -128,7 +128,7 @@ export function buildTransformHead(siteUrl: string, siteName: string, defaultDes
             item: `${siteUrl}${itemPath}`,
           };
         })
-        .filter((item) => typeof item.name === "string" && item.name.toLowerCase() !== "index"),
+        .filter(item => typeof item.name === "string" && item.name.toLowerCase() !== "index"),
     ];
 
     const tags: HeadConfig[] = [
@@ -188,7 +188,7 @@ export function buildTransformHead(siteUrl: string, siteName: string, defaultDes
     if (!isHomePage && !is404Page && !isHiddenUtilityPage && !isChapterIndex) {
       const isLearningResource =
         /^\d{2}\s/.test(relativePath) ||
-        ["考点", "复习", "实验", "基础", "概念"].some((keyword) =>
+        ["考点", "复习", "实验", "基础", "概念"].some(keyword =>
           (pageData.title || "").includes(keyword),
         );
       const sharedArticleFields = {
