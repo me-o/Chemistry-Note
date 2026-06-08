@@ -4,6 +4,15 @@ import { useData } from "vitepress";
 
 import { useWalineBase } from "./useWalineBase";
 
+const props = withDefaults(
+  defineProps<{
+    placeholder?: string;
+  }>(),
+  {
+    placeholder: "可以在这边评论也可以反馈问题。如果反馈问题希望能留下昵称，方便在首页展示",
+  },
+);
+
 const { isDark } = useData();
 const { serverURL, path } = useWalineBase();
 </script>
@@ -16,7 +25,7 @@ const { serverURL, path } = useWalineBase();
     :meta="['nick', 'mail']"
     :no-rss="true"
     :locale="{
-      placeholder: '可以在这边评论也可以反馈问题。如果反馈问题希望能留下昵称，方便在首页展示',
+      placeholder: props.placeholder,
     }"
   />
 </template>
