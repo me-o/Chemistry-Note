@@ -24,5 +24,6 @@ export const buildNavItems = (rootDir: string): DefaultTheme.NavItem[] => {
       text: "下载",
       items: [{ component: "CCPdfDownloadButton" }],
     },
+    { component: "CCSiteSettings" },
   ];
 };

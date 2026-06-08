@@ -43,6 +43,20 @@ export default defineConfig({
     ["meta", { name: "twitter:description", content: defaultDescription }],
     [
       "script",
+      {},
+      `;(() => {
+        try {
+          const settings = JSON.parse(localStorage.getItem("cc-site-settings") || "{}");
+          const root = document.documentElement;
+          root.classList.toggle("cc-hide-contributors", settings.showContributors === false);
+          root.classList.toggle("cc-hide-outline", settings.showOutline === false);
+          root.classList.toggle("cc-hide-comments", settings.showComments === false);
+          root.classList.toggle("cc-font-serif", settings.fontFamily === "serif");
+        } catch {}
+      })();`,
+    ],
+    [
+      "script",
       {
         defer: "",
         src: "https://umami.seeridia.top/script.js",

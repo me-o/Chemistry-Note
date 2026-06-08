@@ -6,8 +6,8 @@ import { nextTick, onMounted, onBeforeUnmount, watch } from "vue";
 import CCArticleContributors from "./components/CCArticleContributors.vue";
 import Breadcrumb from "./components/CCBreadCrumb.vue";
 import CCFooter from "./components/CCFooter.vue";
-import PdfDownloadButton from "./components/CCPdfDownloadButton.vue";
 import { CCPageviews, CCWaline } from "./components/waline";
+import { bootstrapSiteSettings } from "./composables/useSiteSettings";
 
 const { Layout } = DefaultTheme;
 const route = useRoute();
@@ -50,6 +50,7 @@ const onSectionTitleClick = (event) => {
 };
 
 onMounted(() => {
+  bootstrapSiteSettings();
   document.addEventListener("click", onSectionTitleClick, true);
   runOnClientFrame(expandCurrentSidebarGroup);
 });
@@ -77,9 +78,11 @@ watch(
 
     <!-- 评论区 -->
     <template #doc-after>
-      <ClientOnly>
-        <CCWaline />
-      </ClientOnly>
+      <div class="cc-comments-region">
+        <ClientOnly>
+          <CCWaline />
+        </ClientOnly>
+      </div>
     </template>
 
     <!-- 浏览量 -->
@@ -87,9 +90,11 @@ watch(
       <ClientOnly>
         <CCPageviews />
       </ClientOnly>
-      <ClientOnly>
-        <CCArticleContributors />
-      </ClientOnly>
+      <div class="cc-contributors-region">
+        <ClientOnly>
+          <CCArticleContributors />
+        </ClientOnly>
+      </div>
     </template>
 
     <!-- 页脚信息 -->
